@@ -23,7 +23,7 @@ def set_bg_image(image_path):
 
 # Load YOLO model
 def load_yolo_model():
-    net = cv2.dnn.readNetFromDarknet('yolov3.cfg', 'yolov3.weights')
+    net = cv2.dnn.readNetFromDarknet('Image_Recognition_with_OpenCV/yolov3.cfg', 'Image_Recognition_with_OpenCV/yolov3.weights')
     layer_names = net.getLayerNames()
 
     # Handle OpenCV version differences for `getUnconnectedOutLayers`
