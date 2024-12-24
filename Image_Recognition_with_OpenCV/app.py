@@ -131,7 +131,7 @@ if uploaded_file:
     output_image = draw_boxes(image_np.copy(), detected_objects)
 
     # Display results
-    st.image(output_image, caption="Processed Image", use_column_width=True)
+    st.image(output_image, caption="Processed Image", use_container_width=True)  # Updated parameter
 
     # Display detected objects
     st.write("Detected Objects:")
