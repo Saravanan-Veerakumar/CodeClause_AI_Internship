@@ -34,7 +34,7 @@ def load_yolo_model():
         output_layers = [layer_names[i[0] - 1] for i in unconnected_out_layers]
 
     # Load class labels
-    with open('coco.names', 'r') as f:
+    with open('Image_Recognition_with_OpenCV/coco.names', 'r') as f:
         classes = [line.strip() for line in f.readlines()]
 
     return net, output_layers, classes
