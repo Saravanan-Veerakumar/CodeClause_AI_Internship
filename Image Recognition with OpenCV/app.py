@@ -3,8 +3,19 @@ import cv2
 import numpy as np
 from PIL import Image
 import base64
+import os
+import urllib.request
 
-# Function to set background image
+# Function to dynamically download YOLO weights
+def download_yolo_weights():
+    weights_path = "yolov3.weights"
+    if not os.path.exists(weights_path):
+        with st.spinner("Downloading YOLO weights... This may take a while!"):
+            url = "https://pjreddie.com/media/files/yolov3.weights"
+            urllib.request.urlretrieve(url, weights_path)
+            st.success("YOLO weights downloaded successfully.")
+
+# Function to set background image (optional)
 def set_bg_image(image_path):
     with open(image_path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
@@ -23,6 +34,9 @@ def set_bg_image(image_path):
 
 # Load YOLO model
 def load_yolo_model():
+    # Ensure weights are downloaded
+    download_yolo_weights()
+
     net = cv2.dnn.readNetFromDarknet('yolov3.cfg', 'yolov3.weights')
     layer_names = net.getLayerNames()
 
@@ -108,9 +122,6 @@ def draw_boxes(image, detected_objects):
     return image
 
 # Streamlit UI
-# Set the background image
-#set_bg_image("object-detection-app.jpg")
-
 st.title("Object Detection System")
 st.write("Upload an image to detect objects.")
 
