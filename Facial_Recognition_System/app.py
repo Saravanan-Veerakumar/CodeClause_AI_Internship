@@ -5,10 +5,10 @@ import numpy as np
 import pickle
 
 # Load the pre-trained model and celebrity names
-with open('celebrity_face_recognition_model.pkl', 'rb') as model_file:
+with open('models/celebrity_face_recognition_model.pkl', 'rb') as model_file:
     svm_classifier = pickle.load(model_file)
 
-with open('celebrity_names.pkl', 'rb') as names_file:
+with open('models/celebrity_names.pkl', 'rb') as names_file:
     celebrity_names = pickle.load(names_file)
 
 # Streamlit app setup
