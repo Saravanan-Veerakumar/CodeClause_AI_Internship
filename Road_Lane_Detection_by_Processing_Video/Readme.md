@@ -36,7 +36,9 @@ This project uses computer vision techniques to detect lanes in a given video. I
 
 Place your input video file (e.g., test_video.mp4) in the project directory or update the video_path variable in the main() function with the correct path to your video.
 
-Run the script:
+Download the **test_video.mp4** from here: https://drive.google.com/file/d/1PpF3VPvG208WLDK8mrlgB7xXigReHGcl/view?usp=sharing
+
+## Run the script:
 ```
 python lane_detection.py
 ```
