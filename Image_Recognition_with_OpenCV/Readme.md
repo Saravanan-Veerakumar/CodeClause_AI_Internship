@@ -4,10 +4,6 @@
 
 The Object Detection System is a Streamlit-based web application that uses a YOLO (You Only Look Once) model to perform real-time object detection. Users can upload images, and the app detects and labels objects within the image using bounding boxes and confidence scores.
 
-The app is hosted on Streamlit Cloud and is accessible here in below URL:
-
-https://image-recognition-system-by-saravanan-veerakumar-codeclause.streamlit.app/
-
 ## **Features:**
 
 * Image Upload: Users can upload images in JPG, JPEG, or PNG formats for object detection.
@@ -15,13 +11,32 @@ https://image-recognition-system-by-saravanan-veerakumar-codeclause.streamlit.ap
 * Dynamic Results: Displays detected objects along with their confidence scores.
 * Responsive UI: The application resizes images to fit the container width and provides a user-friendly interface.
 
-## **Demo:**
+## **Screenshots of output:**
 
-Example Output:
-Uploaded Image:
+- **Uploaded Image #1:**
+  
+  ![Traffic Jam_03](https://github.com/user-attachments/assets/45b1e807-6369-4f24-a4bc-5e70727cde56)
 
+- **Processed Image #1:**
+  
+  ![image](https://github.com/user-attachments/assets/b65bd947-6439-4e1a-b67c-5c76aff47062)
 
-Processed Image:
+- **Uploaded Image #2:**
+  
+  ![15117658872_b0fe69e77c_b](https://github.com/user-attachments/assets/4c31bf17-2a56-4cbd-a4e4-8eb68b002cc1)
+
+- **Processed Image #2:**
+  
+  ![image](https://github.com/user-attachments/assets/071f56f3-8fe4-48f6-bb8d-3983dc48eebe)
+
+- **Uploaded Image #3:**
+  
+  ![Chennai_Airport_Domestic_Terminal](https://github.com/user-attachments/assets/32d6056b-054c-443b-9426-b83e8e3a8db8)
+
+- **Processed Image #3:**
+  
+  ![image](https://github.com/user-attachments/assets/9358e0c8-61de-44c9-8a77-35254d2c0941)
+
 
 ## **Installation Guide** ##
 To run the project locally, follow these steps:
