@@ -83,9 +83,16 @@ Facial Recognition System/
     streamlit run app.py
     ```
     After running the above command in CMD prompt it will open the local server URL in your browser (e.g., http://localhost:8501).
+---
+## 🖼️ Screenshots of Output:
 
-### 🖼️ Example Output
-Here are some sample results of the facial recognition system.
+![image](https://github.com/user-attachments/assets/c9fef9e1-79fc-49e1-b793-83d052f8394e)
+--
+![image](https://github.com/user-attachments/assets/7e78ee95-5644-4409-b050-70b2fdd43495)
+--
+![image](https://github.com/user-attachments/assets/2ade2a2e-0b66-4bee-95c8-7b7f387b6fe8)
+
+---
 
 
 ### 🧠 Insights from this project:
