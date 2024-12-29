@@ -82,3 +82,12 @@ Captures video frames, processes them, and outputs the processed video with lane
 - OpenCV for computer vision tools and algorithms.
 - NumPy for numerical operations.
 - Hough Line Transformation for lane detection.
+
+### 📜 License
+  This project is licensed under the MIT License.
+
+## Author
+**Saravanan Veerakumar**
+
+- GitHub : https://github.com/Saravanan-Veerakumar
+- LinkedIn : https://www.linkedin.com/in/saravanan-veerakumar/
