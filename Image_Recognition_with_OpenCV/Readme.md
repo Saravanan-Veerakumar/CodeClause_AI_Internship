@@ -21,6 +21,8 @@ The Object Detection System is a Streamlit-based web application that uses a YOL
   
   ![image](https://github.com/user-attachments/assets/b65bd947-6439-4e1a-b67c-5c76aff47062)
 
+---
+
 - **Uploaded Image #2:**
   
   ![15117658872_b0fe69e77c_b](https://github.com/user-attachments/assets/4c31bf17-2a56-4cbd-a4e4-8eb68b002cc1)
@@ -28,6 +30,8 @@ The Object Detection System is a Streamlit-based web application that uses a YOL
 - **Processed Image #2:**
   
   ![image](https://github.com/user-attachments/assets/071f56f3-8fe4-48f6-bb8d-3983dc48eebe)
+
+---
 
 - **Uploaded Image #3:**
   
@@ -37,6 +41,7 @@ The Object Detection System is a Streamlit-based web application that uses a YOL
   
   ![image](https://github.com/user-attachments/assets/9358e0c8-61de-44c9-8a77-35254d2c0941)
 
+---
 
 ## **Installation Guide** ##
 To run the project locally, follow these steps:
