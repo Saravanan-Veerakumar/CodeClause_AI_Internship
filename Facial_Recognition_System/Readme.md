@@ -94,15 +94,6 @@ Facial Recognition System/
 
 ---
 
-
-### 🧠 Insights from this project:
-
-By working on this project, you'll gain insights into:
--  Face detection and feature extraction techniques.
--  Training machine learning models with embeddings.
--  Building interactive apps using Streamlit.
--  Deployment of machine learning applications.
-
 ### 📜 License
   This project is licensed under the MIT License.
 
