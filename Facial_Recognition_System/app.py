@@ -13,10 +13,14 @@ with open('models/celebrity_names.pkl', 'rb') as names_file:
 
 # Streamlit app setup
 st.title("Facial Recognition System")
+st.markdown('<p class="engineered-text">**Engineered by SARAVANAN VEERAKUMAR as a part of internship program with CODECLAUSE.</p>', unsafe_allow_html=True)
 st.write("Upload an image to recognize faces")
 
+# Layout with two columns: First column for the image and the second for results
+left_column, right_column = st.columns([3, 1])
+
 # Upload an image
-uploaded_file = st.file_uploader("Choose an image", type=['jpg', 'jpeg', 'png'])
+uploaded_file = left_column.file_uploader("Choose an image", type=['jpg', 'jpeg', 'png'])
 
 if uploaded_file is not None:
     # Read the image file
@@ -24,9 +28,9 @@ if uploaded_file is not None:
     image = cv2.imdecode(image_bytes, cv2.IMREAD_COLOR)
 
     if image is not None:
-        # Convert to RGB and display the image
+        # Convert to RGB and display the image with a smaller size
         rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        st.image(rgb_image, caption="Uploaded Image", use_column_width=True)
+        left_column.image(rgb_image, caption="Uploaded Image", use_column_width=False, width=250)  # Set width smaller
 
         # Detect faces and find encodings
         face_locations = face_recognition.face_locations(rgb_image)
@@ -39,12 +43,35 @@ if uploaded_file is not None:
             celebrity_name = celebrity_names[prediction]
             results.append(celebrity_name)
 
-        # Display results
+        # Display results in the right column
         if results:
-            st.write("Recognized Faces:")
-            for name in results:
-                st.write(f"- {name}")
+            with right_column:
+                st.write("###### RECOGNIZED FACES")
+                for name in results:
+                    # Fade-in and fade-out effect for names
+                    st.markdown(
+                        f"""
+                        <div style="
+                            color: red;
+                            font-size: 24px;
+                            font-weight: bold;
+                            text-align: center;
+                            animation: fadeinout 3s infinite;
+                            margin: 5px 0;">
+                            {name}
+                        </div>
+
+                        <style>
+                        @keyframes fadeinout {{
+                            0% {{ opacity: 0; }}
+                            50% {{ opacity: 1; }}
+                            100% {{ opacity: 0; }}
+                        }}
+                        </style>
+                        """,
+                        unsafe_allow_html=True
+                    )
         else:
-            st.write("No faces recognized.")
+            right_column.write("No faces recognized.")
     else:
-        st.write("Error: Unable to process the image.")
+        left_column.write("Error: Unable to process the image.")
