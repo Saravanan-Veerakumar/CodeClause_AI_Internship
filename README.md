@@ -25,10 +25,6 @@ This repository documents the projects completed during my Artificial Intelligen
    - Golden-level project.
    - A system to detect and highlight road lanes in video streams for autonomous vehicles or driver assistance.
 
-4. **Personality Prediction System via CV Analysis**
-   - Golden-level project.
-   - An NLP-based system to analyze CVs and predict personality traits using machine learning.
-
 ## Tools & Technologies
 - **Languages**: Python
 - **Libraries**: OpenCV, Dlib, Face Recognition, NLP libraries
