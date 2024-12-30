@@ -1,4 +1,4 @@
-# **Object Detection System**
+# **Image Recognition system (Object Detection System)**
 
 ## **Overview:**
 
